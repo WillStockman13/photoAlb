@@ -1,0 +1,119 @@
+body {
+  background: url('https://s-media-cache-ak0.pinimg.com/564x/03/70/c7/0370c72d8909239921fdf4aa45da6a0b.jpg');
+}
+
+.app {
+  margin: 10% auto;
+  height: 425px;
+  width: 600px;
+  z-index:-1;
+  background: rgb(211,211,211);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.Title {
+  padding-top: 10px;
+}
+
+.btn {
+  display: inline-block
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid transparent;
+  padding: .5rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  transition: all .25s;
+}
+
+.btn-xs {
+  display: inline-block
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  border: 1px solid transparent;
+  padding: .15rem .25rem;
+  font-size: .75rem;
+  border-radius: .1rem;
+  transition: all .25s;
+}
+
+.SignUp {
+  margin-left: 5px;
+  margin-top: 5px;
+}
+
+.Home {
+  margin-top: 10px;
+}
+
+.Photos {
+  display: none;
+  margin: 10px auto auto auto;
+  background: rgb(255, 255, 255);
+  overflow-y: auto;
+  height: 250px;
+  width: 500px;
+}
+
+.Photo {
+  float: left;
+  margin: 10px;
+}
+
+.LogIn {
+  margin-top: 5px;
+}
+
+.Username {
+  margin-top: 100px;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.Password {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.Submit {
+  margin-bottom: 2px;
+}
+
+.btn-primary {
+  color: white;
+  background-color: #0275d8;
+  border: 1px solid #0275d8;
+}
+
+.btn-primary:hover {
+  background-color: #025aa5;
+  border-color: #01549b;
+}
+
+.btn-warning {
+  color: white;
+  background-color: #f0ad4e;
+  border-color: #f0ad4e;
+}
+
+.btn-warning:hover {
+  background-color: #ec971f;
+  border-color: #eb9316;
+}

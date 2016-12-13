@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Photo Album",
+  "description": "This extension stores a users photo album",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "ChromPic.png",
+    "default_title": "Photo Album"
+  },
+
+   "background":{
+     "scripts": ["popup.js"]
+   },
+  "permissions": ["tabs", "activeTab", "https://ajax.googleapis.com/"],
+  "manifest_version": 2
+}

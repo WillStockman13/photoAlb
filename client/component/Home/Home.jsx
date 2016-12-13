@@ -1,33 +1,28 @@
-class Home extends React.Component {
-  
-  constructor(props) {
-    super(props);
-    this.state = {
-      user: null
-    };
-  }
+var Home = props => {
 
-  addPicture(e) {
+  var addPicture = function(e) {
+    var photo = $('.picture').val();
     $.ajax({
-      url: '/picture',
+      url: '/api/picture',
       method: 'POST',
       data: JSON.stringify({
-        picture: $('.picture').val(),
-        username: window.LoggedIn.username
+        picture: photo,
+        username: props.photos.user
       }),
       contentType: 'application/json',
       success: (data) => {
+        props.photos.photos.push(photo)
+        props.state.setState({photos: props.photos.photos})
         $('.picture').val('')
-        window.changeState()
+
       }
     })
   }
 
-  render() {
-    if(window.LoggedIn) {
+    if(props.photos.user) {
       return (
         <div className="Home">
-          Enter Picture Url Here: <input className='picture'></input> <button onClick={this.addPicture.bind(this)}>submit</button>
+          Enter Picture Url Here: <input className='picture'></input> <button className='btn-xs btn-warning Submit' onClick={addPicture.bind(this)}>submit</button>
         </div>
       )   
     } else {
@@ -37,7 +32,7 @@ class Home extends React.Component {
         </div>
       )
     }
-  }
+  
 }
 
 window.Home = Home;
